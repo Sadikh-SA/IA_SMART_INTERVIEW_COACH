@@ -50,18 +50,20 @@ cd smart-interview-coach
 ```
 
 ### 2. Lancer le Frontend React
-
+```bash
 cd frontend
 npm install
 npm start
+```
 
 ### 3. Lancer le Backend FastAPI
-
+```bash
 cd ../backend
 python -m venv venv
 source venv/bin/activate   # ou venv\Scripts\activate (Windows)
 pip install fastapi uvicorn openai python-dotenv
 uvicorn main:app --reload
+```
 
 
 # 👤 Auteur
