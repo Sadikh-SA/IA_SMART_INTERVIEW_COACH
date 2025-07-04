@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api import questions, analyses
+from api import questions, analyses, audio
 
 app = FastAPI()
 
@@ -14,3 +14,4 @@ app.add_middleware(
 
 app.include_router(questions.router)
 app.include_router(analyses.router)
+app.include_router(audio.router)
