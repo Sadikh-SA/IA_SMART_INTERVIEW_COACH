@@ -12,11 +12,11 @@ backend/*.pyc
 backend/.env
 
 # Frontend (React)
-frontend/node_modules/
-frontend/.env
-frontend/build/
-frontend/.cache/
-frontend/.DS_Store
+Frontend/node_modules/
+Frontend/.env
+Frontend/build/
+Frontend/.cache/
+Frontend/.DS_Store
 
 # VSCode
 .vscode/
