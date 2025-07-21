@@ -14,6 +14,7 @@ interface ScoreRadarProps {
 }
 
 const ScoreRadar: React.FC<ScoreRadarProps> = ({ data }) => {
+  
   const chartData = [
     { subject: 'Communication', value: data.communication },
     { subject: 'Clarté', value: data.clarte },
@@ -28,7 +29,7 @@ const ScoreRadar: React.FC<ScoreRadarProps> = ({ data }) => {
           <PolarGrid />
           <PolarAngleAxis dataKey="subject" />
           <PolarRadiusAxis angle={30} domain={[0, 10]} />
-          <Radar name="Score" dataKey="score" stroke="#1976d2" fill="#1976d2" fillOpacity={0.6} />
+          <Radar name="Score" dataKey="value" stroke="#1976d2" fill="#1976d2" fillOpacity={0.6} />
         </RadarChart>
       </ResponsiveContainer>
     </Box>

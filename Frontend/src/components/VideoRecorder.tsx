@@ -99,7 +99,8 @@ const VideoRecorder: React.FC<VideoRecorderProps> = ({ poste, question }) => {
 
   return (
     <Box>
-      <Typography variant="h6">🎥 Enregistrement vidéo</Typography>
+      <Typography variant="h6">🎙️ Réponse vidéo à la question</Typography>
+      <Typography color="text.secondary">Question : {question}</Typography>
       <video ref={videoRef} autoPlay muted style={{ width: '100%', marginBottom: 16 }} />
       {/* {videoURL && (
         <video src={videoURL} controls style={{ width: '100%', marginBottom: 16 }} />
